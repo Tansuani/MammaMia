@@ -1,4 +1,4 @@
-import { createContext,useEffect,useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import axios from 'axios';
 export const PizzasContext = createContext()
 
@@ -14,8 +14,8 @@ const PizzasProvider = ({ children }) => {
             if (!response.status) {
                 throw new Error("Error. No hay datos");
             }
-            const pizzasDB = response.data
-            setPizzas(pizzasDB);
+            const pizzasList = response.data
+            setPizzas(pizzasList);
         } catch (error) {
             console.log("falla de api" + error)
         }
@@ -27,7 +27,7 @@ const PizzasProvider = ({ children }) => {
 
     return (
         <PizzasContext.Provider
-            value={{ pizzas, setPizzas, pedidos, setPedidos}}>
+            value={{ pizzas, setPizzas, pedidos, setPedidos }}>
             {children}
         </PizzasContext.Provider>
     );

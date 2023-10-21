@@ -4,7 +4,7 @@ export const CardDetail = ({ pizza }) => {
     const { img = '', name = 'Titulo', ingredients = ['text', 'text', 'text', 'text'], id = '0', price = '000', desc = 'texto texto' } = pizza;
 
     const addToCarro = () => {
-    
+
     }
 
     return (

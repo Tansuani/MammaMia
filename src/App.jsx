@@ -1,6 +1,6 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
-import { Carrito } from './views/Carrrito'
+import { Carrito } from './views/Carrito'
 import { Pizza } from './views/Pizza'
 import { Home } from './views/Home'
 import { Navbar } from './components/Navbar'
